@@ -69,7 +69,7 @@ export default class CardAddress extends Component {
               <span className="card__label card--address-wallet">
                 Wallet Address:
               </span>
-              <span className="card__result card--address-hash">
+              <span className="card__result card--address-SECI">
                 { this.props.address }
               </span>
             </div>
@@ -78,7 +78,7 @@ export default class CardAddress extends Component {
                 Sent:
               </span>
               <span className="card__result">
-                { numeral(recv - balance).format('0,0.0000') } HASH
+                { numeral(recv - balance).format('0,0.0000') } SECI
               </span>
             </div>
             <div className="card__row">
@@ -86,7 +86,7 @@ export default class CardAddress extends Component {
                 Received:
               </span>
               <span className="card__result">
-                { numeral(recv).format('0,0.0000') } HASH
+                { numeral(recv).format('0,0.0000') } SECI
               </span>
             </div>
             <div className="card__row">
@@ -94,7 +94,7 @@ export default class CardAddress extends Component {
                 Balance:
               </span>
               <span className="card__result">
-                { numeral(balance).format('0,0.0000') } HASH
+                { numeral(balance).format('0,0.0000') } SECI
               </span>
             </div>
           </div>
